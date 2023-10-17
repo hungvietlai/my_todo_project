@@ -16,6 +16,7 @@ This repository contains the source code and necessary configurations for `my_to
 
 ## Architecture
 
+```plaintext
 my_todo_project/
 ├── Dockerfile
 ├── README.md
@@ -25,6 +26,7 @@ my_todo_project/
     ├── app.py
     └── templates
         └── index.html
+```
 
 ---
 
@@ -87,4 +89,4 @@ docker rmi -f hungvietlai/my_todo_app
 
 - This project is licensed under the MIT License. For the full text of the license, see the LICENSE file.
 
-[todo_app](https://github.com/hungvietlai/my_todo_project/blob/master/images/todo_app.png)
+![todo_app](https://github.com/hungvietlai/my_todo_project/blob/master/images/todo_app.png)
