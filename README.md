@@ -70,7 +70,10 @@ docker build -t hungvietlai/my_todo_app . # Change the tag to match your Docker 
 ### 4. Create and run container in detach mode:
 
 ```bash
-docker run -d -p 5000:5000 hungvietlai/my_todo_app  #The website will be available on localhost port 5000
+docker run -d -p 5000:5000 hungvietlai/my_todo_app  # The website will be available on localhost port 5000
+
+# Run container with port 5000 mapped and data persisted on the host at 'path/to/data'
+docker run -d -p 5000:5000 -v path/to/data:/opt/app/instance hungvietlai/my_todo_app 
 
 ```
 ### 5.(Optional) Deploy the app using Jenkins:
